@@ -1,5 +1,286 @@
+@import url(//db.onlinewebfonts.com/c/7ff156862c7f9569455874115efe100a?family=Monotype+Baskerville+eText);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  font-size: 1rem;
+  font-family: Monotype Baskerville eText;
+  background-color: white;
+}
+
+#navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  margin: -117px 30px 0px 30px;
+}
+#navegacao #logo img {
+  width: 110px;
+}
+#navegacao #menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+}
+#navegacao #menu ul li {
+  list-style: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.18em;
+}
+#navegacao #menu ul li:hover {
+  color: rgb(46, 46, 46);
+  transition: 0.1s;
+}
+
+#linha-1 {
+  position: relative;
+  top: 75px;
+}
+
+#bg-1 {
+  background-image: url("/Image/04.jpg");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#bg-1 h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 3.08em;
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  width: 600px;
+}
+#bg-1 p {
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  font-size: 1.08em;
+}
+#bg-1 button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.541);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#bg-1 button:hover {
+  background: rgb(0, 0, 0);
+}
+
+#bg-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#bg-2 #texto-1 h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.58em;
+  margin: 30px 0px 30px 0px;
+}
+#bg-2 #quadrados {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 0px 145px 0px 145px;
+}
+#bg-2 #quadrados .quad {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.08em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+#bg-2 #quadrados .quad img {
+  width: 100px;
+}
+#bg-2 #quadrados .quad:hover {
+  transform: scale(1.2, 1.2);
+}
+#bg-2 #quadrados .quad-oculto {
+  display: none;
+}
+#bg-2 #quad-botao {
+  align-self: center;
+  position: relative;
+  bottom: 30px;
+  margin-top: 30px;
+}
+#bg-2 #quad-botao button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#bg-2 #quad-botao button:hover {
+  background: rgba(0, 0, 0, 0.39);
+}
+#bg-2 #quad-botao #ver-menos {
+  display: none;
+}
+#bg-2 #texto-2 h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.58em;
+  margin: 50px 0px 90px 0px;
+}
+#bg-2 #album {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 100px 100px 100px;
+}
+#bg-2 #album img {
+  width: 350px;
+  margin: 7px 10px 7px 10px;
+}
+
+#bg-3 {
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/Image/01.jpg");
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+#bg-3 #texto-3 {
+  margin-bottom: 20px;
+}
+#bg-3 #texto-3 h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 2.78em;
+}
+#bg-3 #botao-bg3 button {
+  width: 100px;
+  height: 35px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.541);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#bg-3 #botao-bg3 button:hover {
+  background: rgb(0, 0, 0);
+}
+
+#bg-4 {
+  width: 100%;
+  height: 100%;
+  background-color: #222529;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#bg-4 #img-footer {
+  position: relative;
+  top: 20px;
+}
+#bg-4 #img-footer img {
+  width: 70px;
+}
+#bg-4 #texto-4 h1 {
+  color: white;
+  font-weight: 100;
+}
+#bg-4 hr {
+  width: 90%;
+  position: relative;
+}
+#bg-4 #redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin: 20px 0px 0px 100px;
+}
+#bg-4 #redes-sociais h1 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#bg-4 #redes-sociais #icons {
+  display: flex;
+}
+#bg-4 #redes-sociais #icons #icones {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+#bg-4 #redes-sociais #icons #icones img {
+  width: 25px;
+  filter: invert(100%);
+  margin: 5px 0px 5px 0px;
+}
+#bg-4 #redes-sociais #icons #icon-texto h3 {
+  color: white;
+  font-weight: 100;
+  margin: 10px 0px 10px 0px;
+}
+#bg-4 .linha-v {
+  height: 200px;
+  border-left: 1px solid white;
+  position: relative;
+  bottom: 240px;
+  right: 300px;
+}
+#bg-4 #linha-v-2 {
+  left: 300px;
+  bottom: 440px;
+}
+#bg-4 #hr-footer-2 {
+  position: relative;
+  bottom: 440px;
+}
+#bg-4 #formas-de-contato {
+  align-self: flex-end;
+  position: relative;
+  bottom: 130px;
+  right: 50px;
+}
+#bg-4 #formas-de-contato h1 {
+  color: white;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+#bg-4 #formas-de-contato h3 {
+  color: white;
+  font-weight: 100;
+}
+#bg-4 #logo-footer {
+  width: 300px;
+  margin: -190px 0px -110px 0px;
 }/*# sourceMappingURL=style.css.map */

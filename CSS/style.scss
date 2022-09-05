@@ -1,5 +1,344 @@
+@import url(//db.onlinewebfonts.com/c/7ff156862c7f9569455874115efe100a?family=Monotype+Baskerville+eText);
+
+$font: 1.08em;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    font-size: 1rem;
+    font-family: Monotype Baskerville eText;
+    background-color: white;
+}
+//Menu de navegação------------------------------------//
+#navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    margin: -117px 30px 0px 30px;
+
+    #logo {
+        img {
+            width: 110px;
+        }
+    }
+
+    #menu {
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            width: 450px;
+    
+            li {
+                list-style: none;
+                cursor: pointer;
+                color: white;
+                font-size: $font + 0.1;
+
+                &:hover {
+                    color: rgb(46, 46, 46);
+                    transition: 0.1s;
+                }
+            }
+        }
+    }
+}
+
+#linha-1 {
+    position: relative;
+    top: 75px;
+}
+//Primeiro Background----------------------------------//
+#bg-1 {
+    background-image: url("/Image/04.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+        color: white;
+        font-weight: 100;
+        font-size: $font + 2;
+        position: relative;
+        bottom: 50px;
+        text-align: center;
+        width: 600px;
+    }
+
+    p {
+        color: white;
+        text-align: center;
+        position: relative;
+        bottom: 30px;
+        font-size: $font;
+    }
+
+    button {
+        width: 100px;
+        height: 35px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.541);
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover {
+            background: rgb(0, 0, 0);
+        }
+    }
+}
+
+#bg-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    #texto-1 {
+        h1 {
+            font-weight: 100;
+            text-align: center;
+            font-size: $font + 1.5;
+            margin: 30px 0px 30px 0px;
+        }
+    }
+
+    #quadrados {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0px 145px 0px 145px;
+
+        .quad {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            font-size: $font;
+            font-weight: bold;
+            transition: 0.3s;
+
+            img {
+                width: 100px;
+            }
+
+            &:hover {
+                transform: scale(1.2, 1.2);
+            }
+        }
+
+        .quad-oculto {
+            display: none;
+        }
+    }
+
+    #quad-botao {
+        align-self: center;
+        position: relative;
+        bottom: 30px;
+        margin-top: 30px;
+
+        button {
+            width: 100px;
+            height: 35px;
+            position: relative;
+            background: transparent;
+            border: 1px solid black;
+            color: black;
+            cursor: pointer;
+            transition: 0.2s;
+    
+            &:hover {
+                background: rgba(0, 0, 0, 0.39);
+            }
+        }
+
+        #ver-menos {
+            display: none;
+        }
+    }
+
+    #texto-2 {
+        h1 {
+            font-weight: 100;
+            text-align: center;
+            font-size: $font + 1.5;
+            margin: 50px 0px 90px 0px;
+        }
+    }
+
+    #album {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0px 100px 100px 100px;
+
+        img {
+            width: 350px;
+            margin: 7px 10px 7px 10px;
+        }
+    }
+}
+
+#bg-3 {
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/Image/01.jpg');
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    #texto-3 {
+        margin-bottom: 20px;
+
+        h1 {
+            color: white;
+            font-weight: 100;
+            font-size: $font + 1.7;
+        }
+    }
+
+    #botao-bg3 {
+        button {
+            width: 100px;
+            height: 35px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.541);
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+    
+            &:hover {
+                background: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+#bg-4 {
+    width: 100%;
+    height: 100%;
+    background-color: #222529;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #img-footer {
+        position: relative;
+        top: 20px;
+
+        img {
+            width: 70px;
+        }
+    }
+
+    #texto-4 {
+        h1 {
+            color: white;
+            font-weight: 100;
+        }
+    }
+
+    hr {
+        width: 90%;
+        position: relative;
+    }
+
+    #redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        margin: 20px 0px 0px 100px;
+
+        h1 {
+            color: white;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+
+        #icons {
+            display: flex;
+
+            #icones {
+                display: flex;
+                flex-direction: column;
+                margin-right: 10px;
+                
+                img {
+                    width: 25px;
+                    filter: invert(100%);
+                    margin: 5px 0px 5px 0px;
+                }
+            }
+    
+            #icon-texto {
+                h3 {
+                    color: white;
+                    font-weight: 100;
+                    margin: 10px 0px 10px 0px;
+                }
+            }
+        }
+    }
+
+    .linha-v {
+        height: 200px;
+        border-left: 1px solid white;
+        position: relative;
+        bottom: 240px;
+        right: 300px;
+    }
+
+    #linha-v-2 {
+        left: 300px;
+        bottom: 440px;
+    }
+
+    #hr-footer-2 {
+        position: relative;
+        bottom: 440px;
+    }
+
+    #formas-de-contato {
+        align-self: flex-end;
+        position: relative;
+        bottom: 130px;
+        right: 50px;
+
+        h1 {
+            color: white;
+            font-weight: 100;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: white;
+            font-weight: 100;
+        }
+    }
+    
+    #logo-footer {
+        width: 300px;
+        margin: -190px 0px -110px 0px;
+    }
 }
