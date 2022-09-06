@@ -6,10 +6,10 @@ $font: 1.08em;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem;
 }
 
 html, body {
-    font-size: 1rem;
     font-family: Monotype Baskerville eText;
     background-color: white;
 }
@@ -69,11 +69,11 @@ html, body {
     h1 {
         color: white;
         font-weight: 100;
-        font-size: $font + 2;
+        font-size: clamp(60px, 4vw, 6vw);
         position: relative;
         bottom: 50px;
         text-align: center;
-        width: 600px;
+        width: max(700px, 50vw);
     }
 
     p {
@@ -81,7 +81,7 @@ html, body {
         text-align: center;
         position: relative;
         bottom: 30px;
-        font-size: $font;
+        font-size: clamp(25px, 1.5vw, 4vw);
     }
 
     button {
@@ -137,10 +137,6 @@ html, body {
 
             img {
                 width: 100px;
-            }
-
-            &:hover {
-                transform: scale(1.2, 1.2);
             }
         }
 
@@ -242,103 +238,120 @@ html, body {
     background-color: #222529;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 50px;
 
     #img-footer {
-        position: relative;
-        top: 20px;
+        align-self: center;
+        margin-top: 20px;
 
         img {
-            width: 70px;
+            width: 50px;
         }
     }
 
-    #texto-4 {
+    #nome-estabelecimento {
+        align-self: center;
+        margin-top: -15px;
         h1 {
             color: white;
             font-weight: 100;
+            font-size: $font + 1;
         }
     }
 
-    hr {
-        width: 90%;
-        position: relative;
-    }
-
-    #redes-sociais {
+    #tabela {
         display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        margin: 20px 0px 0px 100px;
+        justify-content: space-between;
+        margin: 0px 50px 0px 50px;
 
-        h1 {
-            color: white;
-            font-weight: 100;
-            margin-bottom: 20px;
-        }
-
-        #icons {
+        #redes-sociais-geral {
             display: flex;
+            flex-direction: column;
 
-            #icones {
-                display: flex;
-                flex-direction: column;
-                margin-right: 10px;
-                
-                img {
-                    width: 25px;
-                    filter: invert(100%);
-                    margin: 5px 0px 5px 0px;
-                }
-            }
-    
-            #icon-texto {
-                h3 {
+            #titulo-redes-sociais {
+                margin-bottom: 20px;
+
+                h1 {
                     color: white;
                     font-weight: 100;
-                    margin: 10px 0px 10px 0px;
+                    font-size: $font + 1;
+                }
+            }
+            
+            #redes-sociais {
+                display: flex;
+    
+                #icones {
+                    margin-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+    
+                    img {
+                        margin-bottom: 5px;
+                        filter: invert(100%);
+                        width: 20px;
+                    }
+                }
+    
+                #texto-redes {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    span {
+                        color: white;
+                        font-size: $font;
+                        margin-bottom: 5px;
+                    }
                 }
             }
         }
-    }
 
-    .linha-v {
-        height: 200px;
-        border-left: 1px solid white;
-        position: relative;
-        bottom: 240px;
-        right: 300px;
-    }
+        #contato {
+            #titulo-contatos {
+                margin-bottom: 20px;
 
-    #linha-v-2 {
-        left: 300px;
-        bottom: 440px;
-    }
+                h1 {
+                    color: white;
+                    font-weight: 100;
+                    font-size: $font + 1;
+                }
+            }
 
-    #hr-footer-2 {
-        position: relative;
-        bottom: 440px;
-    }
+            #contatos {
+                display: flex;
+                flex-direction: column;
 
-    #formas-de-contato {
-        align-self: flex-end;
-        position: relative;
-        bottom: 130px;
-        right: 50px;
-
-        h1 {
-            color: white;
-            font-weight: 100;
-            margin-bottom: 20px;
+                span {
+                    color: white;
+                    margin-bottom: 10px;
+                }
+            }
         }
-        h3 {
-            color: white;
-            font-weight: 100;
+
+        #linha-1 {
+            height: 200px;
+            border-left: 1px solid white;
+            margin-top: -75px;
+            margin-left: -240px;
+        }
+
+        #logo-footer {
+            img {
+                width: 250px;
+                margin-top: -30px;
+            }
+        }
+
+        #linha-2 {
+            height: 200px;
+            border-left: 1px solid white;
+            margin-right: -200px;
         }
     }
-    
-    #logo-footer {
-        width: 300px;
-        margin: -190px 0px -110px 0px;
+
+    #hr-2 {
+        position: relative;
+        bottom: 25px;
+        margin-bottom: 50px;
     }
 }

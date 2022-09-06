@@ -3,10 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 html, body {
-  font-size: 1rem;
   font-family: Monotype Baskerville eText;
   background-color: white;
 }
@@ -58,18 +58,18 @@ html, body {
 #bg-1 h1 {
   color: white;
   font-weight: 100;
-  font-size: 3.08em;
+  font-size: clamp(60px, 4vw, 6vw);
   position: relative;
   bottom: 50px;
   text-align: center;
-  width: 600px;
+  width: max(700px, 50vw);
 }
 #bg-1 p {
   color: white;
   text-align: center;
   position: relative;
   bottom: 30px;
-  font-size: 1.08em;
+  font-size: clamp(25px, 1.5vw, 4vw);
 }
 #bg-1 button {
   width: 100px;
@@ -119,9 +119,6 @@ html, body {
 }
 #bg-2 #quadrados .quad img {
   width: 100px;
-}
-#bg-2 #quadrados .quad:hover {
-  transform: scale(1.2, 1.2);
 }
 #bg-2 #quadrados .quad-oculto {
   display: none;
@@ -204,83 +201,96 @@ html, body {
   background-color: #222529;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 50px;
 }
 #bg-4 #img-footer {
-  position: relative;
-  top: 20px;
+  align-self: center;
+  margin-top: 20px;
 }
 #bg-4 #img-footer img {
-  width: 70px;
+  width: 50px;
 }
-#bg-4 #texto-4 h1 {
+#bg-4 #nome-estabelecimento {
+  align-self: center;
+  margin-top: -15px;
+}
+#bg-4 #nome-estabelecimento h1 {
   color: white;
   font-weight: 100;
+  font-size: 2.08em;
 }
-#bg-4 hr {
-  width: 90%;
-  position: relative;
+#bg-4 #tabela {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px 0px 50px;
 }
-#bg-4 #redes-sociais {
+#bg-4 #tabela #redes-sociais-geral {
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
-  margin: 20px 0px 0px 100px;
 }
-#bg-4 #redes-sociais h1 {
-  color: white;
-  font-weight: 100;
+#bg-4 #tabela #redes-sociais-geral #titulo-redes-sociais {
   margin-bottom: 20px;
 }
-#bg-4 #redes-sociais #icons {
-  display: flex;
-}
-#bg-4 #redes-sociais #icons #icones {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-}
-#bg-4 #redes-sociais #icons #icones img {
-  width: 25px;
-  filter: invert(100%);
-  margin: 5px 0px 5px 0px;
-}
-#bg-4 #redes-sociais #icons #icon-texto h3 {
+#bg-4 #tabela #redes-sociais-geral #titulo-redes-sociais h1 {
   color: white;
   font-weight: 100;
-  margin: 10px 0px 10px 0px;
+  font-size: 2.08em;
 }
-#bg-4 .linha-v {
+#bg-4 #tabela #redes-sociais-geral #redes-sociais {
+  display: flex;
+}
+#bg-4 #tabela #redes-sociais-geral #redes-sociais #icones {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#bg-4 #tabela #redes-sociais-geral #redes-sociais #icones img {
+  margin-bottom: 5px;
+  filter: invert(100%);
+  width: 20px;
+}
+#bg-4 #tabela #redes-sociais-geral #redes-sociais #texto-redes {
+  display: flex;
+  flex-direction: column;
+}
+#bg-4 #tabela #redes-sociais-geral #redes-sociais #texto-redes span {
+  color: white;
+  font-size: 1.08em;
+  margin-bottom: 5px;
+}
+#bg-4 #tabela #contato #titulo-contatos {
+  margin-bottom: 20px;
+}
+#bg-4 #tabela #contato #titulo-contatos h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 2.08em;
+}
+#bg-4 #tabela #contato #contatos {
+  display: flex;
+  flex-direction: column;
+}
+#bg-4 #tabela #contato #contatos span {
+  color: white;
+  margin-bottom: 10px;
+}
+#bg-4 #tabela #linha-1 {
   height: 200px;
   border-left: 1px solid white;
+  margin-top: -75px;
+  margin-left: -240px;
+}
+#bg-4 #tabela #logo-footer img {
+  width: 250px;
+  margin-top: -30px;
+}
+#bg-4 #tabela #linha-2 {
+  height: 200px;
+  border-left: 1px solid white;
+  margin-right: -200px;
+}
+#bg-4 #hr-2 {
   position: relative;
-  bottom: 240px;
-  right: 300px;
-}
-#bg-4 #linha-v-2 {
-  left: 300px;
-  bottom: 440px;
-}
-#bg-4 #hr-footer-2 {
-  position: relative;
-  bottom: 440px;
-}
-#bg-4 #formas-de-contato {
-  align-self: flex-end;
-  position: relative;
-  bottom: 130px;
-  right: 50px;
-}
-#bg-4 #formas-de-contato h1 {
-  color: white;
-  font-weight: 100;
-  margin-bottom: 20px;
-}
-#bg-4 #formas-de-contato h3 {
-  color: white;
-  font-weight: 100;
-}
-#bg-4 #logo-footer {
-  width: 300px;
-  margin: -190px 0px -110px 0px;
+  bottom: 25px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
