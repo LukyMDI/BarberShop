@@ -69,7 +69,7 @@ html, body {
     h1 {
         color: white;
         font-weight: 100;
-        font-size: clamp(60px, 4vw, 6vw);
+        font-size: clamp(4em, 4vw, 7em);
         position: relative;
         bottom: 50px;
         text-align: center;
@@ -274,7 +274,7 @@ html, body {
                 h1 {
                     color: white;
                     font-weight: 100;
-                    font-size: $font + 1;
+                    font-size: clamp(10px, 2.5vw, 5vw);
                 }
             }
             
@@ -313,7 +313,7 @@ html, body {
                 h1 {
                     color: white;
                     font-weight: 100;
-                    font-size: $font + 1;
+                    font-size: clamp(10px, 2.5vw, 5vw);
                 }
             }
 
@@ -332,26 +332,28 @@ html, body {
             height: 200px;
             border-left: 1px solid white;
             margin-top: -75px;
-            margin-left: -240px;
         }
 
         #logo-footer {
             img {
                 width: 250px;
-                margin-top: -30px;
+                position: relative;
+                bottom: 30px;
+                right: 35px;
             }
         }
 
         #linha-2 {
             height: 200px;
             border-left: 1px solid white;
-            margin-right: -200px;
+            position: relative;
+            right: 50px;
         }
     }
 
     #hr-2 {
         position: relative;
-        bottom: 25px;
+        bottom: 55px;
         margin-bottom: 50px;
     }
 }
