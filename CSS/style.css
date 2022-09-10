@@ -22,16 +22,19 @@ html, body {
 #navegacao #logo img {
   width: 110px;
 }
+#navegacao #menu #menu-hamburguer {
+  display: none;
+}
 #navegacao #menu ul {
   display: flex;
   justify-content: space-evenly;
-  width: 450px;
 }
 #navegacao #menu ul li {
   list-style: none;
   cursor: pointer;
   color: white;
   font-size: 1.18em;
+  margin-left: 20px;
 }
 #navegacao #menu ul li:hover {
   color: rgb(46, 46, 46);
@@ -247,7 +250,7 @@ html, body {
 #bg-4 #tabela #redes-sociais-geral #redes-sociais #icones img {
   margin-bottom: 5px;
   filter: invert(100%);
-  width: 20px;
+  width: clamp(15px, 1.3vw, 2vw);
 }
 #bg-4 #tabela #redes-sociais-geral #redes-sociais #texto-redes {
   display: flex;
@@ -255,8 +258,8 @@ html, body {
 }
 #bg-4 #tabela #redes-sociais-geral #redes-sociais #texto-redes span {
   color: white;
-  font-size: 1.08em;
   margin-bottom: 5px;
+  font-size: clamp(13px, 1.1vw, 2vw);
 }
 #bg-4 #tabela #contato #titulo-contatos {
   margin-bottom: 20px;
@@ -273,6 +276,7 @@ html, body {
 #bg-4 #tabela #contato #contatos span {
   color: white;
   margin-bottom: 10px;
+  font-size: clamp(13px, 1.1vw, 2vw);
 }
 #bg-4 #tabela #linha-1 {
   height: 200px;

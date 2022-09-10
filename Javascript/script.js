@@ -20,3 +20,14 @@ ver_menos.addEventListener('click', function(){
     ver_menos.style.display = "none";
     ver_mais.style.display = "block";
 })
+
+function menu(){
+    var menu_hamburger = document.getElementById('menu-hamburguer');
+    var menu = document.getElementById('bg-menu');
+
+    menu_hamburger.addEventListener('click', function(){
+        menu.style.display = "block";
+    });
+}
+
+menu();

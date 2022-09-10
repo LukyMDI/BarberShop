@@ -29,16 +29,21 @@ html, body {
     }
 
     #menu {
+        #menu-hamburguer {
+            display: none;
+        }
+
         ul {
             display: flex;
             justify-content: space-evenly;
-            width: 450px;
+            //width: 450px;
     
             li {
                 list-style: none;
                 cursor: pointer;
                 color: white;
                 font-size: $font + 0.1;
+                margin-left: 20px;
 
                 &:hover {
                     color: rgb(46, 46, 46);
@@ -289,7 +294,7 @@ html, body {
                     img {
                         margin-bottom: 5px;
                         filter: invert(100%);
-                        width: 20px;
+                        width: clamp(15px, 1.3vw, 2vw);
                     }
                 }
     
@@ -299,8 +304,8 @@ html, body {
                     
                     span {
                         color: white;
-                        font-size: $font;
                         margin-bottom: 5px;
+                        font-size: clamp(13px, 1.1vw, 2vw);
                     }
                 }
             }
@@ -324,6 +329,7 @@ html, body {
                 span {
                     color: white;
                     margin-bottom: 10px;
+                    font-size: clamp(13px, 1.1vw, 2vw);
                 }
             }
         }
